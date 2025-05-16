@@ -1,0 +1,83 @@
+/* Tags padrão */
+header {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    justify-content: center;
+}
+
+main {
+    width: 80vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+button {
+    position: fixed;
+    bottom: 2vh;
+    right: 2vw;
+}
+
+img {
+    height: 5vh;
+}
+
+footer {
+    width: 100vw;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tema claro */
+.site-claro {
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+}
+.banner-claro {
+    background-color: #e5e5e5;
+}
+
+.conteudo-claro {
+    background-color: #f1f1f1;
+}
+
+.rodape-claro {
+    background-color: #e5e5e5;
+}
+
+/* Tema escuro */
+.site-escuro {
+    background-color: #5e5e5e;
+    color: #f1f1f1;
+}
+
+.banner-escuro {
+    background-color: #1f1f1f;
+}
+
+.conteudo-escuro {
+    background-color: #5e5e5e;
+}
+
+.rodape-escuro {
+    background-color: #1f1f1f;
+}
