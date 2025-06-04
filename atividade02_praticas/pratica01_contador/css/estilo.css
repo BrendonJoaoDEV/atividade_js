@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 3%;
+    padding: 2%;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 30vw;
+}
+
+ul li {
+    margin: 1% 6%;
+}
+
+button {
+    font-size: 1.5rem;
+}
