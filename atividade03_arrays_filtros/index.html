@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja Natural</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Loja de Produtos Naturais</h1>
+    </header>
+
+    <main>
+        <label for="filtro">Filtrar por categoria:</label>
+        <select name="filtro" id="filtro">
+            <option value="todos">Todos</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="cosmeticos">Cosméticos</option>
+        </select>
+        <ul id="resultado"></ul>
+        <p id="total"></p>
+    </main>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

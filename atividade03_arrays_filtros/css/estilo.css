@@ -1,0 +1,40 @@
+body {
+    width: 100vh;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: green;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 2%;
+}
+
+label, p {
+    font-size: 1.1rem;
+    margin-left: 2%;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+}
+
+li {
+    background-color: #ffffff;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5%;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.2);
+}
