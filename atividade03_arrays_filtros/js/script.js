@@ -13,58 +13,32 @@ document.addEventListener('DOMContentLoaded', function () {
     const total = document.getElementById('total');
 
     filtro.addEventListener('input', function () {
+        let soma = 0;
+        let arrayFiltrado = [];
+
         if (filtro.value === 'todos') {
             limpar(resultado);
 
-            let soma = 0;
-
-            array.forEach(function (valor) {
-                const elemento = document.createElement('li');
-
-                elemento.innerHTML = `<strong>${valor.nome}</strong><br>
-                R$: ${valor.preco}`;
-
-                resultado.appendChild(elemento);
-
-                soma = soma + valor.preco;
-            });
-            
-            total.innerHTML = `Total: R$ ${soma}`;
+            arrayFiltrado = array.slice();
         } 
 
         else if (filtro.value === 'alimentos') {
             limpar(resultado);
 
-            let soma = 0;
-
-            let arrayFiltrado = array.filter(function (valor) {
+            arrayFiltrado = array.filter(function (valor) {
                 return valor.categoria === 'alimento';
             });
-
-            arrayFiltrado.forEach(function (valor) {
-                const elemento = document.createElement('li');
-
-                elemento.innerHTML = `<strong>${valor.nome}</strong><br>
-                R$: ${valor.preco}`;
-
-                resultado.appendChild(elemento);
-
-                soma = soma + valor.preco;
-            });
-            
-            total.innerHTML = `Total: R$ ${soma}`;
         } 
 
         else if (filtro.value === 'cosmeticos') {
             limpar(resultado);
 
-            let soma = 0;
-
-            let arrayFiltrado = array.filter(function (valor) {
+            arrayFiltrado = array.filter(function (valor) {
                 return valor.categoria === 'cosmético';
             });
+        }
 
-            arrayFiltrado.forEach(function (valor) {
+        arrayFiltrado.forEach(function (valor) {
                 const elemento = document.createElement('li');
 
                 elemento.innerHTML = `<strong>${valor.nome}</strong><br>
@@ -76,7 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
             
             total.innerHTML = `Total: R$ ${soma}`;
-        }
     });
 });
 
