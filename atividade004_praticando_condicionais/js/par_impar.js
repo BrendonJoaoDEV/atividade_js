@@ -15,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     document.getElementById('entrada').addEventListener('input', function () {
-        document.getElementById('saida').textContent = verificarParImpar(document.getElementById('entrada'));
+        const entrada = document.getElementById('entrada');
+        const saida = document.getElementById('saida');
+        
+        if (!isNaN(entrada.value)) {
+            saida.textContent = verificarParImpar(entrada);
+        } else {saida.textContent = `${entrada.value} não é um número!`}
     });
-})
+});
